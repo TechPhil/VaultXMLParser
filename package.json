@@ -1,0 +1,17 @@
+{
+  "name": "vaultxmlparser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "bin.js",
+  "scripts": {
+    "build": "pkg ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-xml-parser": "^4.2.4",
+    "open-html": "^1.0.1",
+    "pkg": "^5.8.1"
+  }
+}

@@ -1,0 +1,3 @@
+const vaultparser = require('.')
+
+vaultparser()

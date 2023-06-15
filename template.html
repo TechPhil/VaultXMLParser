@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Vault File View</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdn.datatables.net/v/bs4-4.6.0/jq-3.6.0/dt-1.13.4/datatables.min.css" rel="stylesheet"/>
+ 
+<script src="https://cdn.datatables.net/v/bs4-4.6.0/jq-3.6.0/dt-1.13.4/datatables.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <table id="datatable"></table>
+    <script>
+
+        const JSONData = `%DATAGOESHERE%`
+
+        $('#datatable').DataTable({
+            data: JSON.parse(JSONData),
+            columns: [
+                { data: 'fileID', title:'File ID' },
+                { data: 'owner', title: 'Owner' },
+                { data: 'title', title: 'Title' },
+                { data: 'filesize', title: 'File size' },
+            ]
+        })
+    </script>
+</body>
+</html>
